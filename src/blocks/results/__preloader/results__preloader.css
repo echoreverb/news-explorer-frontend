@@ -1,0 +1,5 @@
+@import './_hidden/results__preloader_hidden.css';
+
+.results__preloader {
+  padding: 40px 0;
+}

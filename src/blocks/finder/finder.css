@@ -1,0 +1,23 @@
+@import './__container/finder__container.css';
+@import './__subtitle/finder__subtitle.css';
+@import './__title/finder__title.css';
+
+.finder {
+  text-align: center;
+  padding: 80px 0 80px;
+  background-image: url('images/finder-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 768px) {
+  .finder {
+    padding: 66px 0 48px;
+  }
+}
+
+@media (max-width: 700px) {
+  .finder {
+    padding: 56px 0 32px;
+  }
+}

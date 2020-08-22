@@ -1,0 +1,18 @@
+.finder__container {
+  box-sizing: border-box;
+  max-width: 608px;
+  margin: 75px auto 0;
+}
+
+@media (max-width: 768px) {
+  .finder__container {
+    margin: 36px auto 0;
+    max-width: 448px;
+  }
+}
+
+@media (max-width: 700px) {
+  .finder__container {
+    padding: 0 16px;
+  }
+}

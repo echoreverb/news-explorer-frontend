@@ -1,0 +1,14 @@
+@import './__button/results__button.css';
+@import './__container/results__container.css';
+@import './__grid/results__grid.css';
+@import './__not-found/results__not-found.css';
+@import './__preloader/results__preloader.css';
+@import './__title/results__title.css';
+@import './_padding/results_padding_m.css';
+@import './_padding/results_padding_s.css';
+
+.results {
+  background-color: #f5f6f7;
+  text-align: center;
+  margin: 0;
+}

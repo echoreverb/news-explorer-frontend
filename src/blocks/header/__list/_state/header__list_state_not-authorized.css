@@ -1,0 +1,8 @@
+.header__list_state_not-authorized > .header__list-item.header__list-item_articles {
+  display: none;
+}
+
+.header__list_state_not-authorized > .header__list-item.header__list-item_logout-button {
+  display: none;
+}
+

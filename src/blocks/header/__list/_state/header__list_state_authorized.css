@@ -1,0 +1,3 @@
+.header__list_state_authorized > .header__list-item.header__list-item_auth-button {
+  display: none;
+}

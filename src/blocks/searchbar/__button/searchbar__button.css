@@ -1,0 +1,40 @@
+.searchbar__button {
+  height: 100%;
+  position: absolute;
+  padding: 0 54px;
+  right: -1px;
+  top: 0;
+  border-radius: 100px;
+  margin: 0;
+  background: #2f71e5;
+  box-shadow: 0px 5px 15px rgba(14, 26, 57, 0.2);
+  border: none;
+  color: #fff;
+  z-index: 2;
+}
+
+.searchbar__button:hover {
+  background: #347edf;
+}
+
+.searchbar__button:active{
+  background: #2a65cc;
+}
+
+@media (max-width: 768px) {
+  .searchbar__button {
+    padding: 0 50px;
+  }
+}
+
+@media (max-width: 700px) {
+  .searchbar__button {
+    right: 0;
+    min-height: 56px;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    margin-top: 16px;
+  }
+}
+

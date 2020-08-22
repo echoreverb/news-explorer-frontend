@@ -1,0 +1,9 @@
+@media (max-width: 700px) {
+  .header__list_theme_dark {
+    background-color: #1a1b22;
+  }
+
+  .header__list_.header__list_theme_dark {
+    background: #494a50;
+  }
+}

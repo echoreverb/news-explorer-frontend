@@ -1,0 +1,50 @@
+@import './_active/header__link_active.css';
+@import './_hidden/header__link_hidden.css';
+@import './_theme/header__link_theme_dark.css';
+@import './_theme/header__link_theme_light.css';
+
+.header__link {
+  position: relative;
+  text-decoration: none;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 77px;
+  color: inherit;
+  display: block;
+}
+
+.header__link::after {
+  width: 0;
+  position: absolute;
+  content: '';
+  left: 50%;
+  bottom: -3px;
+  height: 3px;
+  transition: 0.15s linear;
+}
+
+.header__link:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+@media (max-width: 768px) {
+  .header__link {
+    font-size: 16px;
+    line-height: 63px;
+  }
+}
+
+@media (max-width: 700px) {
+  .header__link {
+    font-size: 18px;
+    line-height: 24px;
+    display: inline;
+    padding: 0;
+    padding-bottom: 2px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
