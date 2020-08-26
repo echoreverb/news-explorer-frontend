@@ -1,0 +1,18 @@
+.results_padding_m {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+@media (max-width: 768px) {
+  .results_padding_m {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+@media (max-width: 700px) {
+  .results_padding_m {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}

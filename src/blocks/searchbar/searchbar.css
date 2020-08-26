@@ -1,0 +1,14 @@
+@import './__button/searchbar__button.css';
+@import './__input/searchbar__input.css';
+
+.searchbar {
+  position: relative;
+  width: 100%;
+  min-height: 64px;
+}
+
+@media (max-width: 768px) {
+  .searchbar {
+    min-height: 56px;
+  }
+}

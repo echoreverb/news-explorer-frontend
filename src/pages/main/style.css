@@ -1,0 +1,15 @@
+@import '../../blocks/root/root.css';
+@import '../../blocks/container/container.css';
+@import '../../blocks/button/button.css';
+@import '../../blocks/header/header.css';
+@import '../../blocks/searchbar/searchbar.css';
+@import '../../blocks/finder/finder.css';
+@import '../../blocks/section-title/section-title.css';
+@import '../../blocks/results/results.css';
+@import '../../blocks/card/card.css';
+@import '../../blocks/grid/grid.css';
+@import '../../blocks/preloader/preloader.css';
+@import '../../blocks/not-found/not-found.css';
+@import '../../blocks/author/author.css';
+@import '../../blocks/footer/footer.css';
+@import '../../blocks/popup/popup.css';

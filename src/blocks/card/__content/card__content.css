@@ -1,0 +1,19 @@
+.card__content {
+  flex-direction: column;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-align: left;
+  margin: 0;
+  padding: 20px 24px 0 24px;
+  -webkit-line-clamp: 4;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow-y: hidden;
+  word-wrap: break-word;
+}
+
+@media (max-width: 1000px) {
+  .card__content{
+    padding: 16px 16px 0 16px;
+  }
+}

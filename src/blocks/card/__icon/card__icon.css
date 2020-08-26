@@ -1,0 +1,27 @@
+@import './_type/card__icon_type_add.css';
+@import './_type/card__icon_type_delete.css';
+@import './_type/card__icon_type_tag.css';
+@import './_type/card__icon_type_tip.css';
+@import './_type/card__icon_type_marked.css';
+@import './_hidden/card__icon_hidden.css';
+
+.card__icon {
+  background-color: #fff;
+  position: absolute;
+  min-height: 40px;
+  min-width: 40px;
+  border-radius: 10px;
+  border: none;
+  color: #000;
+  text-align: center;
+  margin: 0;
+  padding: 0 10px;
+  top: 24px;
+  cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+  .card__icon{
+    top: 16px;
+  }
+}

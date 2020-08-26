@@ -1,0 +1,18 @@
+.author__text-content {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: #1a1b22;
+  margin: 0;
+  margin-top: 24px;
+}
+
+@media (max-width: 768px) {
+  .author__text-content {
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 16px;
+  }
+}

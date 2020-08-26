@@ -1,0 +1,18 @@
+.results__title {
+  text-align: left;
+  margin: 0;
+  margin-bottom: 64px;
+}
+
+@media (max-width: 768px) {
+  .results__title {
+    margin-bottom: 32px;
+  }
+}
+
+@media (max-width: 700px) {
+  .results__title {
+    width: 70%;
+    margin-bottom: 24px;
+  }
+}

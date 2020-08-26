@@ -1,0 +1,16 @@
+.card__icon_type_tip {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-style: normal;
+  font-size: 10px;
+  line-height: 12px;
+  font-weight: 500;
+  right: 69px;
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .card__icon_type_tip {
+    visibility: hidden;
+  }
+}

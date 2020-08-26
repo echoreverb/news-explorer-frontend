@@ -1,0 +1,13 @@
+.card__icon_type_marked {
+  background-image: url('images/flag_marked.svg');
+  background-size: 50% 50%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  right: 24px;
+}
+
+@media (max-width: 1000px) {
+  .card__icon_type_marked{
+    right: 16px;
+  }
+}

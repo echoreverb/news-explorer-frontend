@@ -1,0 +1,21 @@
+.card__icon_type_delete {
+  background-image: url('images/delete-card_locked.svg');
+  background-size: 50% 50%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  right: 24px;
+}
+
+.card__icon_type_delete:hover {
+  background-image: url('images/delete-card_default.svg');
+}
+
+.card__icon_type_delete:hover~.card__icon_type_tip {
+  display: block;
+}
+
+@media (max-width: 1000px) {
+  .card__icon_type_delete{
+    right: 16px;
+  }
+}

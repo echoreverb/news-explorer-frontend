@@ -1,0 +1,14 @@
+.card__icon_type_tag {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  left: 24px;
+}
+
+@media (max-width: 1000px) {
+  .card__icon_type_tag {
+    left: 16px;
+  }
+}

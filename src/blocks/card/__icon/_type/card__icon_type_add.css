@@ -1,0 +1,21 @@
+.card__icon_type_add {
+  background-image: url('images/flag_normal.svg');
+  background-size: 50% 50%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  right: 24px;
+}
+
+.card__icon_type_add:hover {
+  background-image: url('images/flag_hover.svg');
+}
+
+.card__icon_type_add:hover~.card__icon_type_tip {
+  display: block;
+}
+
+@media (max-width: 1000px) {
+  .card__icon_type_add{
+    right: 16px;
+  }
+}

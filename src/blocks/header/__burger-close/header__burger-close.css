@@ -1,0 +1,20 @@
+@import './_hidden/header__burger-close_hidden.css';
+@import './_theme/header__burger-close_theme_dark.css';
+@import './_theme/header__burger-close_theme_light.css';
+
+.header__burger-close {
+  display: none;
+  width: 24px;
+  height: 24px;
+  border: none;
+  background-color: transparent;
+  z-index: 10;
+  cursor: pointer;
+  outline: none;
+}
+
+@media (max-width: 700px) {
+  .header__burger-close {
+    display: block;
+  }
+}

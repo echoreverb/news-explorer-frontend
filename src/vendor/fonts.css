@@ -1,0 +1,79 @@
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: local('Inter Regular'),
+    url('./fonts/Inter-Regular.woff2') format('woff2'),
+    url('./fonts/Inter-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local('Inter Medium'),
+    url('./fonts/Inter-Medium.woff2') format('woff2'),
+    url('./fonts/Inter-Medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: local('Roboto Black'),
+    url('./fonts/Roboto-Black.woff2') format('woff2'),
+    url('./fonts/Roboto-Black.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local('Roboto Medium'),
+    url('./fonts/Roboto-Medium.woff2') format('woff2'),
+    url('./fonts/Roboto-Medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: local('Roboto Regular'),
+    url('./fonts/Roboto-Regular.woff2') format('woff2'),
+    url('./fonts/Roboto-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: local('Roboto Slab Regular'),
+    url('./fonts/RobotoSlab-Regular.woff2') format('woff2'),
+    url('./fonts/RobotoSlab-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
+  src: local('Roboto Slab Regular'),
+    url('./fonts/RobotoSlab-Bold.woff2') format('woff2'),
+    url('./fonts/RobotoSlab-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: local('Source Sans Pro'),
+    url('./fonts/SourceSansPro-Regular.woff2') format('woff2'),
+    url('./fonts/SourceSansPro-Regular.woff') format('woff');
+}

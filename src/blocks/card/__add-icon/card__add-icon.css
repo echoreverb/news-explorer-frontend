@@ -1,0 +1,22 @@
+.card__add-icon {
+  background-color: #fff;
+  position: absolute;
+  min-height: 40px;
+  min-width: 40px;
+  border-radius: 10px;
+  border: none;
+  color: #000;
+  text-align: center;
+  margin: 0;
+  padding: 0 12px;
+  background-image: url('images/flag_normal.svg');
+  background-size: 50% 50%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  top: 24px;
+  right: 24px;
+}
+
+.card__add-icon:hover {
+  background-image: url('images/flag_hover.svg');
+}

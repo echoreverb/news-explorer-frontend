@@ -1,0 +1,14 @@
+@import './_visible/popup__error-message_visible.css';
+@import './_place/popup__error-message_place_input.css';
+@import './_place/popup__error-message_place_submit.css';
+
+.popup__error-message {
+  position: absolute;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #ff0000;
+  display: none;
+}

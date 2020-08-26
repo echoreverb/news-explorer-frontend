@@ -1,0 +1,34 @@
+@import './_mobile-opened/header__list_mobile-opened.css';
+@import './_state/header__list_state_authorized.css';
+@import './_state/header__list_state_not-authorized.css';
+@import './_theme/header__list_theme_dark.css';
+@import './_theme/header__list_theme_light.css';
+
+.header__list {
+  box-sizing: border-box;
+  display: flex;
+  list-style: none;
+  align-items: baseline;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 700px) {
+  .header__list {
+    display: flex;
+    padding: 56px 16px 0;
+    width: 100%;
+    flex-direction: column;
+    border-bottom-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+  }
+
+  .header__list::before {
+    content: '';
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    top: 56px;
+    left: 0;
+  }
+}

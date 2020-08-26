@@ -1,0 +1,55 @@
+{
+  "name": "news-explorer-frontend",
+  "version": "0.0.1",
+  "description": "This is the frontend part of my graduation project",
+  "main": "index.js",
+  "scripts": {
+    "dev": "NODE_ENV=development webpack-dev-server --mode development --open --watch",
+    "build": "NODE_ENV=production rimraf dist && webpack --mode production",
+    "deploy": "NODE_ENV=production gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/echoreverb/news-explorer-frontend.git"
+  },
+  "author": "Alexey Dikarev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/echoreverb/news-explorer-frontend/issues"
+  },
+  "homepage": "https://github.com/echoreverb/news-explorer-frontend#readme",
+  "devDependencies": {
+    "@babel/cli": "7.10.5",
+    "@babel/core": "7.11.1",
+    "@babel/preset-env": "7.11.0",
+    "babel-loader": "8.1.0",
+    "css-loader": "4.2.1",
+    "cssnano": "4.1.10",
+    "eslint": "7.6.0",
+    "eslint-config-airbnb-base": "14.2.0",
+    "eslint-plugin-import": "2.22.0",
+    "file-loader": "6.0.0",
+    "html-webpack-plugin": "4.3.0",
+    "image-webpack-loader": "6.0.0",
+    "mini-css-extract-plugin": "0.10.0",
+    "optimize-css-assets-webpack-plugin": "5.0.3",
+    "postcss-loader": "3.0.0",
+    "style-loader": "1.2.1",
+    "webpack": "4.44.1",
+    "webpack-cli": "3.3.12",
+    "webpack-dev-server": "3.11.0",
+    "webpack-md5-hash": "0.0.6"
+  },
+  "dependencies": {
+    "@babel/polyfill": "7.10.4",
+    "autoprefixer": "9.8.6",
+    "core-js": "3.6.5",
+    "gh-pages": "3.1.0",
+    "normalize.css": "8.0.1"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  }
+}
