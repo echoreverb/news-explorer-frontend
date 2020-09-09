@@ -1,6 +1,7 @@
 import './style.css';
 
 import {
+  MAIN_PATH,
   MAIN_API_OPTIONS,
   NEWS_API_OPTIONS,
   SHOW_MORE_QTY,
@@ -26,6 +27,8 @@ import SignupForm from '../../js/components/SignupForm';
 import Header from '../../js/components/Header';
 import MainCardList from '../../js/components/MainCardList';
 import MainNewsCard from '../../js/components/MainNewsCard';
+
+alert(window.location.pathname);
 
 const rootElement = document.querySelector('.root');
 const overlayElement = document.querySelector('.overlay');
@@ -116,6 +119,7 @@ const header = new Header({
   },
   navListElement,
   logoutButtonTextElement,
+  MAIN_PATH,
 });
 
 const loginPopup = new Popup({

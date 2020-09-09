@@ -7,6 +7,7 @@ export default class Header extends BaseComponent {
     this.logoutButton = props.instances.logoutButton;
     this.navListElement = props.navListElement;
     this.logoutButtonTextElement = props.logoutButtonTextElement;
+    this.MAIN_PATH = props.MAIN_PATH;
     this.isLoggedIn = false;
     this.userName = '';
 
@@ -24,8 +25,13 @@ export default class Header extends BaseComponent {
           this._renderLoggedIn(res.data.data.name);
           return Promise.resolve(res.data.data);
         }
-        if (window.location.pathname !== '/') {
-          window.location.replace('/');
+        console.log(window.location.pathname !== this.MAIN_PATH);
+        console.log(window.location.pathname === this.MAIN_PATH);
+        console.log('this main path', this.MAIN_PATH);
+        console.log('lcat', window.location.pathname);
+        alert('so what');
+        if (window.location.pathname !== this.MAIN_PATH) {
+          window.location.replace(this.MAIN_PATH);
         }
         return this._renderLoggedOut();
       })
@@ -52,8 +58,8 @@ export default class Header extends BaseComponent {
     this.mainApi.logout()
       .then((res) => {
         if (res.status === 201) {
-          if (window.location.pathname !== '/') {
-            window.location.replace('/');
+          if (window.location.pathname !== this.MAIN_PATH) {
+            window.location.replace(this.MAIN_PATH);
             return;
           }
           this._renderLoggedOut();

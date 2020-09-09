@@ -1,6 +1,7 @@
 import './style.css';
 
 import {
+  MAIN_PATH,
   MAIN_API_OPTIONS,
 } from '../../js/config';
 
@@ -82,6 +83,7 @@ const header = new Header({
   },
   navListElement,
   logoutButtonTextElement,
+  MAIN_PATH,
 });
 
 const savedNewsTitle = new SavedNewsTitle({
