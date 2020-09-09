@@ -25,11 +25,6 @@ export default class Header extends BaseComponent {
           this._renderLoggedIn(res.data.data.name);
           return Promise.resolve(res.data.data);
         }
-        console.log(window.location.pathname !== this.MAIN_PATH);
-        console.log(window.location.pathname === this.MAIN_PATH);
-        console.log('this main path', this.MAIN_PATH);
-        console.log('lcat', window.location.pathname);
-        alert('so what');
         if (window.location.pathname !== this.MAIN_PATH) {
           window.location.replace(this.MAIN_PATH);
         }

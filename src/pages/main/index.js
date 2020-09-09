@@ -28,8 +28,6 @@ import Header from '../../js/components/Header';
 import MainCardList from '../../js/components/MainCardList';
 import MainNewsCard from '../../js/components/MainNewsCard';
 
-alert(window.location.pathname);
-
 const rootElement = document.querySelector('.root');
 const overlayElement = document.querySelector('.overlay');
 
