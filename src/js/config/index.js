@@ -1,5 +1,5 @@
 export const NEWS_API_OPTIONS = {
-  baseUrl: 'https://newsapi.org/v2/everything?q=',
+  baseUrl: 'https://nomoreparties.co/v2/everything?q=',
   key: 'f2b033a2d3804b5aaf33852777f3c31e',
   newsLang: 'ru',
   searchPeriodDays: 7,
