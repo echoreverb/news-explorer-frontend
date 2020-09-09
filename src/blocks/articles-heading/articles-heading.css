@@ -3,6 +3,7 @@
 @import './__title/articles-heading__title.css';
 @import './__keyword/articles-heading__keyword.css';
 @import './__subtitle/articles-heading__subtitle.css';
+@import './__subtitle-text/articles-heading__subtitle-text.css';
 
 .articles-heading {
   display: flex;

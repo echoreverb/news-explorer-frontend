@@ -9,6 +9,7 @@
   color: #b6bcbf;
   margin: auto auto 24px 24px;
   padding-top: 10px;
+  text-align: left;
 }
 
 @media (max-width: 1000px) {

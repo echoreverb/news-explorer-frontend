@@ -17,25 +17,29 @@
     />
   </head>
 
-  <body class="root">
+  <body class="root" style="display: none;">
     <header class="header header_theme_dark">
       <div class="container header__container">
         <a href="./" class="header__logo">NewsExplorer</a>
         <button
+          id="mobile-open-button"
           type="button"
           class="header__burger header__burger_theme_dark"
         ></button>
         <!-- тогл: header__burger_hidden или  header__burger-close_hidden-->
         <button
+          id="mobile-close-button"
           type="button"
           class="header__burger-close header__burger-close_theme_dark header__burger-close_hidden"
         ></button>
-        <nav class="header__nav">
-        <!-- <nav class="header__nav header__nav_mobile-opened"> -->
-          <ul
+        <nav id="mobile-menu-nav" class="header__nav">
+          <!-- <nav class="header__nav header__nav_mobile-opened"> -->
+          <!-- <ul
             class="header__list header__list_theme_dark header__list_state_authorized"
+          > -->
+          <ul
+            class="header__list header__list_theme_dark header__list_state_not-authorized"
           >
-            <!-- <ul class="header__list header__list_state_not-authorized"> -->
             <li class="header__list-item header__list-item_main">
               <a
                 href="./"
@@ -52,7 +56,7 @@
             </li>
             <li class="header__list-item header__list-item_auth-button">
               <button
-                id="auth-button"
+                id="open-login-header-button"
                 class="button header__button"
                 type="button"
                 aria-label="login"
@@ -62,13 +66,11 @@
             </li>
             <li class="header__list-item header__list-item_logout-button">
               <button
-                id="logout-button"
+                id="logout-header-button"
                 class="button header__button"
                 type="button"
                 aria-label="logout"
-              >
-                Грета
-                <span class="header__space">&nbsp;</span>
+              ><span class="header__button-text">Грета</span>
                 <img
                   src="<%= require('images/logout_white.svg') %>"
                   alt="Выйти из профиля"
@@ -98,7 +100,11 @@
               class="searchbar__input"
               name="searchinput"
             />
-            <button type="submit" class="button searchbar__button">
+            <button
+              id="search-submit-button"
+              type="submit"
+              class="button searchbar__button"
+            >
               Искать
             </button>
           </form>
@@ -108,135 +114,21 @@
       <section class="results results_padding_m">
         <div class="container results__container">
           <h2 class="section-title results__title">Результаты поиска</h2>
-          <div class="grid results__grid">
-            <div class="card grid__item">
-              <img
-                src="<%= require('images/image_04.png') %>"
-                alt="Картинка новости"
-                class="card__image"
-              />
-              <button
-                class="card__icon card__icon_type_add"
-                type="button"
-              ></button>
-              <button class="card__icon card__icon_type_tip" type="button">
-                Войдите, чтобы сохранять статьи
-              </button>
-              <div class="card__content">
-                <time datetime="2020-08-12" class="card__date"
-                  >12 августа, 2020</time
-                >
-                <h3 class="card__title">
-                  «Первозданная тайга»: новый фотопроект Игоря Шпиленка
-                </h3>
-                <p class="card__intro">
-                  Знаменитый фотограф снимает первозданные леса России, чтобы
-                  рассказать о необходимости их сохранения. В этот раз он
-                  отправился в Двинско-Пинежскую тайгу, где ничего не
-                  происходит.
-                </p>
-              </div>
-              <span class="card__source">meduza</span>
-            </div>
+          <div class="grid results__grid"></div>
 
-            <div class="card grid__item">
-              <img
-                src="<%= require('images/image_04.png') %>"
-                alt="Картинка новости"
-                class="card__image"
-              />
-              <button
-                class="card__icon card__icon_type_add"
-                type="button"
-              ></button>
-              <button class="card__icon card__icon_type_tip" type="button">
-                Войдите, чтобы сохранять статьи
-              </button>
-              <div class="card__content">
-                <time datetime="2020-08-12" class="card__date"
-                  >12 августа, 2020</time
-                >
-                <h3 class="card__title">Национальное достояние – парки</h3>
-                <p class="card__intro">
-                  Фотограф отвлеклась от освещения суровой политической
-                  реальности Мексики, чтобы запечатлеть ускользающую красоту
-                  одного из местных чудес природы. одного из местных чудес
-                  природы. одного из местных чудес природы. одного из местных
-                  чудес природы.
-                </p>
-              </div>
-              <span class="card__source">meduza</span>
-            </div>
-
-            <div class="card grid__item">
-              <img
-                src="<%= require('images/image_custom.jpg') %>"
-                alt="Картинка новости"
-                class="card__image"
-              />
-              <button
-                class="card__icon card__icon_type_add"
-                type="button"
-              ></button>
-              <button class="card__icon card__icon_type_tip" type="button">
-                Войдите, чтобы сохранять статьи
-              </button>
-              <div class="card__content">
-                <time datetime="2020-08-12" class="card__date"
-                  >12 августа, 2020</time
-                >
-                <h3 class="card__title">Национальное достояние – парки</h3>
-                <p class="card__intro">
-                  Фотограф отвлеклась от освещения суровой политической
-                  реальности Мексики, чтобы запечатлеть ускользающую красоту
-                  одного из местных чудес природы. одного из местных чудес
-                  природы. одного из местных чудес природы. одного из местных
-                  чудес природы.
-                </p>
-              </div>
-              <span class="card__source">meduza</span>
-            </div>
-
-            <div class="card grid__item">
-              <img
-                src="<%= require('images/finder-bg.png') %>"
-                alt="Картинка новости"
-                class="card__image"
-              />
-              <button
-                class="card__icon card__icon_type_marked"
-                type="button"
-              ></button>
-              <button
-                class="card__icon card__icon_type_tip card__icon_hidden"
-                type="button"
-              >
-                Войдите, чтобы сохранять статьи
-              </button>
-              <div class="card__content">
-                <time datetime="2020-08-12" class="card__date"
-                  >12 августа, 2020</time
-                >
-                <h3 class="card__title">Национальное достояние – парки</h3>
-                <p class="card__intro">
-                  Фотограф отвлеклась от освещения суровой политической
-                  реальности Мексики, чтобы запечатлеть ускользающую красоту
-                  одного из местных чудес природы. одного из местных чудес
-                  природы. одного из местных чудес природы. одного из местных
-                  чудес природы.
-                </p>
-              </div>
-              <span class="card__source">meduza</span>
-            </div>
-          </div>
-          <button class="button results__button" type="button">
-            Показать еще
-          </button>
 
           <div class="preloader results__preloader">
             <i class="preloader__icon"></i>
             <span class="preloader__text">Идёт поиск новостей...</span>
           </div>
+
+          <button
+          id="show-more-button"
+          class="button results__button"
+          type="button"
+        >
+          Показать еще
+        </button>
 
           <div class="not-found results__not-found">
             <img
@@ -291,6 +183,7 @@
 
     <div class="popup popup_type_login">
       <!-- <div class="popup popup_type_login popup_opened"> -->
+      <!-- <div class="overlay popup__overlay"></div> -->
       <div class="popup__content">
         <img
           src="<%=require('images/close.svg')%>"
@@ -298,7 +191,7 @@
           class="popup__close"
         />
         <h3 class="popup__title">Вход</h3>
-        <form class="popup__form" novalidate name="login">
+        <form id="login-form" class="popup__form" novalidate name="login">
           <div class="popup__input-container">
             <span class="popup__input-name">Email</span>
             <input
@@ -313,15 +206,15 @@
               pattern="[\w.-]+@[a-z0-9-]+(\.[a-z]+)+"
             />
             <span
-              class="popup__error-message popup__error-message_place_input popup__error-message_visible"
-              >Неправильный формат email</span
-            >
+              class="popup__error-message popup__error-message_place_input"
+            ></span>
           </div>
           <div class="popup__input-container">
             <span class="popup__input-name">Пароль</span>
             <input
               type="password"
               required
+              autocomplete="off"
               spellcheck="false"
               minlength="8"
               maxlength="30"
@@ -332,21 +225,33 @@
             <span
               class="popup__error-message popup__error-message_place_input"
             ></span>
+            <span
+              class="popup__error-message popup__error-message_place_submit"
+            ></span>
           </div>
-          <button class="button popup__button" type="submit">
+          <button
+            id="login-submit-button"
+            class="button popup__button"
+            type="submit"
+          >
             Войти
           </button>
-          <span class="popup__text"
-            >или&nbsp;<button class="popup__link" type="button">
-              Зарегистрироваться
-            </button></span
-          >
         </form>
+        <span class="popup__text"
+          >или&nbsp;<button
+            id="open-signup-login-popup-button"
+            class="popup__link"
+            type="button"
+          >
+            Зарегистрироваться
+          </button></span
+        >
       </div>
     </div>
 
     <div class="popup popup_type_signup">
       <!-- <div class="popup popup_type_signup popup_opened"> -->
+      <!-- <div class="overlay popup__overlay"></div> -->
       <div class="popup__content">
         <img
           src="<%=require('images/close.svg')%>"
@@ -354,7 +259,7 @@
           class="popup__close"
         />
         <h3 class="popup__title">Регистрация</h3>
-        <form class="popup__form" novalidate name="signup">
+        <form id="signup-form" class="popup__form" novalidate name="signup">
           <div class="popup__input-container">
             <span class="popup__input-name">Email</span>
             <input
@@ -369,15 +274,15 @@
               pattern="[\w.-]+@[a-z0-9-]+(\.[a-z]+)+"
             />
             <span
-              class="popup__error-message popup__error-message_place_input popup__error-message_visible"
-              >Неправильный формат email</span
-            >
+              class="popup__error-message popup__error-message_place_input"
+            ></span>
           </div>
           <div class="popup__input-container">
             <span class="popup__input-name">Пароль</span>
             <input
               type="password"
               required
+              autocomplete="off"
               spellcheck="false"
               minlength="8"
               maxlength="30"
@@ -397,30 +302,40 @@
               spellcheck="false"
               minlength="2"
               maxlength="30"
-              name="username"
+              name="name"
               class="popup__input"
               placeholder="Введите своё имя"
             />
             <span
               class="popup__error-message popup__error-message_place_input"
             ></span>
+            <span
+              class="popup__error-message popup__error-message_place_submit"
+            ></span>
           </div>
-          <span
-            class="popup__error-message popup__error-message_place_submit popup__error-message_visible"
-            >Такой пользователь уже есть</span
+          <button
+            id="signup-submit-button"
+            class="button popup__button"
+            type="submit"
           >
-          <button class="button popup__button" type="submit">
             Зарегистрироваться
           </button>
-          <span class="popup__text"
-            >или&nbsp;<button class="popup__link" type="button">Войти</button></span
-          >
         </form>
+        <span class="popup__text"
+          >или&nbsp;<button
+            id="open-login-signup-popup-button"
+            class="popup__link"
+            type="button"
+          >
+            Войти
+          </button></span
+        >
       </div>
     </div>
 
     <div class="popup popup_type_registered">
       <!-- <div class="popup popup_type_registered popup_opened"> -->
+      <!-- <div class="overlay popup__overlay"></div> -->
       <div class="popup__content">
         <img
           src="<%=require('images/close.svg')%>"
@@ -428,9 +343,16 @@
           class="popup__close"
         />
         <h3 class="popup__title">Пользователь успешно зарегистрирован!</h3>
-        <button class="popup__registered-link">Выполнить вход</button>
+        <button
+          id="open-login-registered-popup-button"
+          class="popup__link popup__link_registered"
+        >
+          Выполнить вход
+        </button>
       </div>
     </div>
+
+    <div class="overlay"></div>
 
     <footer class="footer">
       <div class="container footer__container">
@@ -468,6 +390,29 @@
         </nav>
       </div>
     </footer>
+
+    <template id="card-template">
+      <div class="card grid__item">
+        <a href="" target="_blank"></a>
+        <img src="" alt="" class="card__image" />
+        <button class="card__icon card__icon_type_add" type="button"></button>
+        <button class="card__icon card__icon_type_tip" type="button">
+          Войдите, чтобы сохранять статьи
+        </button>
+        <div class="card__content">
+          <time datetime="2020-08-12" class="card__date">12 августа, 2020</time>
+          <h3 class="card__title">
+            «Первозданная тайга»: новый фотопроект Игоря Шпиленка
+          </h3>
+          <p class="card__intro">
+            Знаменитый фотограф снимает первозданные леса России, чтобы
+            рассказать о необходимости их сохранения. В этот раз он отправился в
+            Двинско-Пинежскую тайгу, где ничего не происходит.
+          </p>
+        </div>
+        <span class="card__source">meduza</span>
+      </div>
+    </template>
 
     <script src="<%= htmlWebpackPlugin.files.js %>"></script>
   </body>
