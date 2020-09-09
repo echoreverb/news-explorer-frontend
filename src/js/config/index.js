@@ -6,7 +6,7 @@ export const NEWS_API_OPTIONS = {
   pageSize: 100,
 };
 export const MAIN_API_OPTIONS = {
-  baseUrl: 'http://localhost:3000',
+  baseUrl: 'https://api.news-explorer.host',
 };
 
 export const SHOW_MORE_QTY = 3;
