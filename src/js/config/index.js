@@ -1,5 +1,5 @@
-export const MAIN_PATH = '/news-explorer-frontend/';
-export const ARTICLES_PATH = '/news-explorer-frontend/articles.html';
+export const MAIN_PATH = '/';
+export const ARTICLES_PATH = '/articles.html';
 
 export const NEWS_API_OPTIONS = {
   baseUrl: 'https://nomoreparties.co/news/v2/everything?q=',
