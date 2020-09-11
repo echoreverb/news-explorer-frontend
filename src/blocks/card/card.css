@@ -1,9 +1,10 @@
 @import './__date/card__date.css';
 @import './__content/card__content.css';
 @import './__icon/card__icon.css';
-@import './__image/card__image.css';
-@import './__source/card__source.css';
 @import './__intro/card__intro.css';
+@import './__image/card__image.css';
+@import './__link/card__link.css';
+@import './__source/card__source.css';
 @import './__title/card__title.css';
 
 .card {
@@ -40,5 +41,11 @@
     max-width: 350px;
     margin: 0 auto;
     min-height: 446px;
+  }
+}
+
+@media (max-width: 400px) {
+  .card {
+    max-width: 288px;
   }
 }

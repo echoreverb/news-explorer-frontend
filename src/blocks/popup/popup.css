@@ -8,7 +8,6 @@
 @import './__input-name/popup__input-name.css';
 @import './__input/popup__input.css';
 @import './__link/popup__link.css';
-@import './__registered-link/popup__registered-link.css';
 @import './__text/popup__text.css';
 @import './__title/popup__title.css';
 @import './_opened/popup_opened.css';
@@ -16,19 +15,25 @@
 
 .popup {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: auto;
+  height: auto;
   align-items: center;
   justify-content: center;
   display: none;
-  z-index: 100;
+  z-index: 130;
 }
 
 @media screen and (max-width: 700px) {
   .popup {
+    transform: none;
+    margin-top: 56px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     align-items: unset;
   }
 }

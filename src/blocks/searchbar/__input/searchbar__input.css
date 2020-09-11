@@ -1,3 +1,5 @@
+@import './_disabled/searchbar__input_disabled.css';
+
 .searchbar__input {
   position: absolute;
   top: 0;

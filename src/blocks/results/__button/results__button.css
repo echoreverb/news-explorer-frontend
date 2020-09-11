@@ -1,4 +1,7 @@
+@import './_visible/results__button_visible.css';
+
 .results__button {
+  display: none;
   width: 288px;
   min-height: 64px;
   border: none;

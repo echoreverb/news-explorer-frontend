@@ -6,9 +6,12 @@
 @import './__title/results__title.css';
 @import './_padding/results_padding_m.css';
 @import './_padding/results_padding_s.css';
+@import './_visible/results_visible.css';
 
 .results {
+  display: none;
   background-color: #f5f6f7;
   text-align: center;
   margin: 0;
+  transition: height .2s;
 }

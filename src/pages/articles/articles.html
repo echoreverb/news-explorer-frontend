@@ -17,31 +17,37 @@
     />
   </head>
 
-  <body class="root">
+  <body class="root" style="display: none;">
     <header class="header header_theme_light">
       <div class="container header__container">
         <a href="./" class="header__logo">NewsExplorer</a>
         <button
+          id="mobile-open-button"
           type="button"
           class="header__burger header__burger_theme_light"
         ></button>
         <!-- тогл: header__burger_hidden или  header__burger-close_hidden-->
         <button
+          id="mobile-close-button"
           type="button"
           class="header__burger-close header__burger-close_theme_light header__burger-close_hidden"
         ></button>
-        <nav class="header__nav">
+        <nav id="mobile-menu-nav" class="header__nav">
           <!-- <nav class="header__nav header__nav_mobile-opened"> -->
+          <!-- <ul
+            class="header__list header__list_theme_light header__list_state_authorized"
+          > -->
           <ul
             class="header__list header__list_theme_light header__list_state_authorized"
           >
-            <!-- <ul class="header__list header__list_state_not-authorized"> -->
             <li class="header__list-item header__list-item_main">
-              <a href="./" class="header__link header__link_theme_light"
+              <a
+                href="./"
+                class="header__link header__link_theme_light"
                 >Главная</a
               >
             </li>
-            <li class="header__list-item header__list-item_articles">
+            <li class="header__list-item header__list-item_articles ">
               <a
                 href="./articles.html"
                 class="header__link header__link_theme_light header__link_active"
@@ -50,8 +56,9 @@
             </li>
             <li class="header__list-item header__list-item_auth-button">
               <button
-                id="auth-button"
+                id="open-login-header-button"
                 class="button header__button"
+                type="button"
                 aria-label="login"
               >
                 Авторизоваться
@@ -59,12 +66,11 @@
             </li>
             <li class="header__list-item header__list-item_logout-button">
               <button
-                id="logout-button"
+                id="logout-header-button"
                 class="button header__button"
+                type="button"
                 aria-label="logout"
-              >
-                Грета
-                <span class="header__space">&nbsp;</span>
+              ><span class="header__button-text"></span>
                 <img
                   src="<%= require('images/logout_black.svg') %>"
                   alt="Выйти из профиля"
@@ -82,13 +88,14 @@
         <div class="container articles-heading__container">
           <span class="articles-heading__info">Сохранённые статьи</span>
           <h2 class="section-title articles-heading__title">
-            Грета, у вас 5 сохранённых статей
           </h2>
           <p class="articles-heading__subtitle">
-            По ключевым словам:
-            <span class="articles-heading__keyword">Природа</span>,
-            <span class="articles-heading__keyword">Тайга</span> и
-            <span class="articles-heading__keyword">2 другим</span>
+            <span id="keyword-title-intro" class="articles-heading__subtitle-text">По ключевым словам: </span>
+            <span id="first-keyword" class="articles-heading__keyword"></span>
+            <span id="first-keyword-after" class="articles-heading__subtitle-text"></span>
+            <span id="second-keyword" class="articles-heading__keyword"></span>
+            <span id="second-keyword-after" class="articles-heading__subtitle-text"></span>
+            <span id="third-keyword" class="articles-heading__keyword"></span>
           </p>
         </div>
       </section>
@@ -96,138 +103,14 @@
       <section class="results results_padding_s">
         <div class="container results__container">
           <div class="grid results__grid">
-            <div class="card grid__item">
-              <img
-                src="<%= require('images/image_04.png') %>"
-                alt="Картинка новости"
-                class="card__image"
-              />
-              <button class="card__icon card__icon_type_tag" type="button">
-                Природа
-              </button>
-              <button
-                class="card__icon card__icon_type_delete"
-                type="button"
-              ></button>
-              <button class="card__icon card__icon_type_tip" type="button">
-                Убрать из сохранённых
-              </button>
-              <div class="card__content">
-                <time datetime="2020-08-12" class="card__date"
-                  >12 августа, 2020</time
-                >
-                <h3 class="card__title">
-                  «Первозданная тайга»: новый фотопроект Игоря Шпиленка
-                </h3>
-                <p class="card__intro">
-                  Знаменитый фотограф снимает первозданные леса России, чтобы
-                  рассказать о необходимости их сохранения. В этот раз он
-                  отправился в Двинско-Пинежскую тайгу, где ничего не
-                  происходит.
-                </p>
-              </div>
-              <span class="card__source">meduza</span>
-            </div>
 
-            <div class="card grid__item">
-              <img
-                src="<%= require('images/image_04.png') %>"
-                alt="Картинка новости"
-                class="card__image"
-              />
-              <button class="card__icon card__icon_type_tag" type="button">
-                Природа
-              </button>
-              <button
-                class="card__icon card__icon_type_delete"
-                type="button"
-              ></button>
-              <button class="card__icon card__icon_type_tip" type="button">
-                Убрать из сохранённых
-              </button>
-              <div class="card__content">
-                <time datetime="2020-08-12" class="card__date"
-                  >12 августа, 2020</time
-                >
-                <h3 class="card__title">Национальное достояние – парки</h3>
-                <p class="card__intro">
-                  Фотограф отвлеклась от освещения суровой политической
-                  реальности Мексики, чтобы запечатлеть ускользающую красоту
-                  одного из местных чудес природы. одного из местных чудес
-                  природы. одного из местных чудес природы. одного из местных
-                  чудес природы.
-                </p>
-              </div>
-              <span class="card__source">meduza</span>
-            </div>
-
-            <div class="card grid__item">
-              <img
-                src="<%= require('images/image_custom.jpg') %>"
-                alt="Картинка новости"
-                class="card__image"
-              />
-              <button class="card__icon card__icon_type_tag" type="button">
-                Природа
-              </button>
-              <button
-                class="card__icon card__icon_type_delete"
-                type="button"
-              ></button>
-              <button class="card__icon card__icon_type_tip" type="button">
-                Убрать из сохранённых
-              </button>
-              <div class="card__content">
-                <time datetime="2020-08-12" class="card__date"
-                  >12 августа, 2020</time
-                >
-                <h3 class="card__title">Национальное достояние – парки</h3>
-                <p class="card__intro">
-                  Фотограф отвлеклась от освещения суровой политической
-                  реальности Мексики, чтобы запечатлеть ускользающую красоту
-                  одного из местных чудес природы. одного из местных чудес
-                  природы. одного из местных чудес природы. одного из местных
-                  чудес природы.
-                </p>
-              </div>
-              <span class="card__source">meduza</span>
-            </div>
-
-            <div class="card grid__item">
-              <img
-                src="<%= require('images/finder-bg.png') %>"
-                alt="Картинка новости"
-                class="card__image"
-              />
-              <button class="card__icon card__icon_type_tag" type="button">
-                Природа
-              </button>
-              <button
-                class="card__icon card__icon_type_delete"
-                type="button"
-              ></button>
-              <button class="card__icon card__icon_type_tip" type="button">
-                Убрать из сохранённых
-              </button>
-              <div class="card__content">
-                <time datetime="2020-08-12" class="card__date"
-                  >12 августа, 2020</time
-                >
-                <h3 class="card__title">Национальное достояние – парки</h3>
-                <p class="card__intro">
-                  Фотограф отвлеклась от освещения суровой политической
-                  реальности Мексики, чтобы запечатлеть ускользающую красоту
-                  одного из местных чудес природы. одного из местных чудес
-                  природы. одного из местных чудес природы. одного из местных
-                  чудес природы.
-                </p>
-              </div>
-              <span class="card__source">meduza</span>
             </div>
           </div>
         </div>
       </section>
     </main>
+
+    <div class="overlay"></div>
 
     <footer class="footer">
       <div class="container footer__container">

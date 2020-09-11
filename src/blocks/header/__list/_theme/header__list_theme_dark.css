@@ -3,7 +3,7 @@
     background-color: #1a1b22;
   }
 
-  .header__list_.header__list_theme_dark {
+  .header__list.header__list_theme_dark::before {
     background: #494a50;
   }
 }

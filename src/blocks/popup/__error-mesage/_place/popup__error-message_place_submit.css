@@ -1,5 +1,7 @@
-.popup__error-message_place_submit {
-  bottom: 142px;
+.popup__error-message.popup__error-message_place_submit {
+  bottom: -30px;
   left: 50%;
   transform: translate(-50%);
+  width: 100%;
+  text-align: center
 }

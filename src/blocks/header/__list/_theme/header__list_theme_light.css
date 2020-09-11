@@ -3,7 +3,7 @@
     background-color: #fff;
   }
 
-  .header__list_.header__list_theme_light {
-    background: #d1d2d6;
+  .header__list.header__list_theme_light::before {
+    background-color: #d1d2d6;
   }
 }

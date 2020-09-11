@@ -1,4 +1,9 @@
-.popup__button_disabled {
+.popup__button.popup__button_disabled {
+  color: #b6bcbf;
+  background: #e6e8eb;
+}
+
+.popup__button.popup__button_disabled:hover {
   color: #b6bcbf;
   background: #e6e8eb;
 }
